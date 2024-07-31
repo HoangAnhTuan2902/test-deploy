@@ -1,0 +1,37 @@
+.navigation {
+	margin: 48px 135px 0 135px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+	.title {
+		font-family: Inter;
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 24px;
+		letter-spacing: 0.03em;
+	}
+	.nav-bar {
+		text-decoration: none;
+		list-style: none;
+		display: flex;
+		gap: 48px;
+		li {
+			//styleName: Title/16PX Regular;
+			font-family: Poppins;
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 24px;
+		}
+	}
+	.search {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 24px;
+		.input-form {
+			background: #f5f5f5;
+			padding: 10px 20px;
+		}
+	}
+}

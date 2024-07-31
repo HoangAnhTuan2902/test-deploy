@@ -1,0 +1,119 @@
+.product-page {
+	.carts {
+		display: inline-block;
+		&:hover {
+			.cart-item {
+				.img {
+					.add-btn {
+						bottom: 0;
+					}
+				}
+			}
+		}
+		.cart-item {
+			.img {
+				width: 270px;
+				height: 250px;
+				overflow: hidden;
+				border-radius: 5px;
+				// padding: 33px 40px;
+				background-color: #f5f5f5;
+				display: inline-block;
+				position: relative;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				.endow {
+					position: absolute;
+					top: 12px;
+					left: 12px;
+					color: #f5f5f5;
+					background-color: #db4444;
+					width: 55px;
+					height: 26px;
+					padding: 4px 12px 4px 12px;
+					border-radius: 4px;
+					font-family: Poppins;
+					font-size: 12px;
+					font-weight: 400;
+					line-height: 18px;
+				}
+				.interact {
+					position: absolute;
+					top: 12px;
+					right: 12px;
+					display: flex;
+					flex-direction: column;
+					gap: 4px;
+					.interact-item {
+						img {
+							border-radius: 50%;
+							background-color: #fff;
+							display: inline-block;
+							padding: 6px;
+						}
+					}
+				}
+				.add-btn {
+					position: absolute;
+					bottom: -41px;
+					left: 0;
+					right: 0;
+					height: 41px;
+					background-color: black;
+					color: #fff;
+					transition: all 0.3s;
+				}
+			}
+			.content {
+				& > * {
+					margin-top: 10px;
+				}
+				.name {
+					font-family: Poppins;
+					font-size: 16px;
+					font-weight: 500;
+					line-height: 24px;
+				}
+				.prices {
+					display: flex;
+					gap: 12px;
+					.price {
+						color: #db4444;
+						display: inline-block;
+						font-family: Poppins;
+						font-size: 16px;
+						font-weight: 500;
+						line-height: 24px;
+					}
+					.price-discount {
+						color: #7f7f7f;
+						display: inline-block;
+						font-family: Poppins;
+						font-size: 16px;
+						font-weight: 500;
+						line-height: 24px;
+					}
+				}
+				.product-reviews {
+					display: flex;
+					.previews-star {
+						display: flex;
+						align-items: center;
+						gap: 5px;
+						// img {
+						// }
+					}
+					.total-previews {
+						display: inline-block;
+						color: #7f7f7f;
+						font-family: Poppins;
+						font-size: 14px;
+						font-weight: 600;
+						line-height: 21px;
+					}
+				}
+			}
+		}
+	}
+}

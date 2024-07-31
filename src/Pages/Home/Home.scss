@@ -1,0 +1,72 @@
+.home {
+	.slick-slider {
+		.slick-list {
+			margin-left: 20px;
+		}
+	}
+	.header {
+		.nav-container {
+			margin-right: 135px;
+			margin-left: 135px;
+			padding-top: 40px;
+			display: flex;
+			justify-content: space-between;
+		}
+		.left {
+			position: relative;
+			display: inline-block;
+			.line {
+				position: absolute;
+				width: 1px;
+				background-color: #8e8e8e;
+				top: -41px;
+				right: -4px;
+				bottom: 16px;
+			}
+		}
+	}
+	.top-header {
+		height: 48px;
+		background-color: black;
+		.desc {
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			gap: 360px;
+			margin-right: 135px;
+			height: 48px;
+
+			span {
+				display: flex;
+				gap: 8px;
+				& > * {
+					color: #fafafa;
+				}
+				.sale-off {
+					font-family: Poppins;
+					font-size: 14px;
+					font-weight: 400;
+					line-height: 21px;
+				}
+				.shop-now {
+					text-decoration: underline;
+					font-family: Poppins;
+					font-size: 14px;
+					font-weight: 600;
+					line-height: 24px;
+				}
+			}
+			.language {
+				color: #fafafa;
+				font-family: Poppins;
+				font-size: 14px;
+				font-weight: 400;
+				line-height: 21px;
+			}
+		}
+	}
+	.products {
+		margin-right: 135px;
+		margin-left: 135px;
+	}
+}
