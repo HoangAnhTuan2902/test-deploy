@@ -3,7 +3,7 @@
 		{
 			"id": "1",
 			"title": "HAVIT HV-G92 Gamepad",
-			"image": "../../public/gaming-handle.png",
+			"image": "/test-deploy/public/gaming-handle.png",
 			"price": 120,
 			"discountPrice": 160,
 			"totalReviews": 88,
@@ -13,7 +13,7 @@
 		{
 			"id": "2",
 			"title": "AK-900 Wired Keyboard",
-			"image": "../../public/keyboard.png",
+			"image": "/test-deploy/public/keyboard.png",
 			"price": 960,
 			"discountPrice": 1160,
 			"totalReviews": 75,
@@ -23,7 +23,7 @@
 		{
 			"id": "3",
 			"title": "IPS LCD Gaming Monitor",
-			"image": "../../public/screen.png",
+			"image": "/test-deploy/public/screen.png",
 			"price": 370,
 			"discountPrice": 400,
 			"totalReviews": 99,
@@ -33,7 +33,7 @@
 		{
 			"id": "4",
 			"title": "HAVIT HV-G92 Gamepad",
-			"image": "../../public/chair.png",
+			"image": "/test-deploy/public/chair.png",
 			"price": 120,
 			"discountPrice": 160,
 			"totalReviews": 88,
@@ -43,7 +43,7 @@
 		{
 			"id": "5",
 			"title": "S-Series Comfort Chair ",
-			"image": "../../public/keyboard.png",
+			"image": "/test-deploy/public/keyboard.png",
 			"price": 375,
 			"discountPrice": 400,
 			"totalReviews": 99,
@@ -53,7 +53,7 @@
 		{
 			"id": "6",
 			"title": "HAVIT HV-G92 Gamepad",
-			"image": "../../public/chair.png",
+			"image": "/test-deploy/public/chair.png",
 			"price": 120,
 			"discountPrice": 160,
 			"totalReviews": 88,
@@ -65,7 +65,7 @@
 		{
 			"id": "2",
 			"title": "AK-900 Wired Keyboard",
-			"image": "../../public/keyboard.png",
+			"image": "/test-deploy/public/keyboard.png",
 			"price": 960,
 			"discountPrice": 1160,
 			"totalReviews": 75,

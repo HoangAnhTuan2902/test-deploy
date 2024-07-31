@@ -4,6 +4,9 @@ import Card from './Pages/Card/Card';
 //import BrowserRouter, Router, Route from react-router-dom
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
 import './App.css';
 
 function App() {

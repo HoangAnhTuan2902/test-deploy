@@ -32,7 +32,7 @@
 			display: flex;
 			align-items: center;
 			justify-content: flex-end;
-			gap: 360px;
+			gap: 280px;
 			margin-right: 135px;
 			height: 48px;
 
@@ -57,6 +57,9 @@
 				}
 			}
 			.language {
+				display: flex;
+				align-items: center;
+				gap: 6px;
 				color: #fafafa;
 				font-family: Poppins;
 				font-size: 14px;

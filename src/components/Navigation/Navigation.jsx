@@ -13,7 +13,7 @@ function Navigation() {
 				<p className='title'>Exclusive</p>
 				<ul className='nav-bar'>
 					<li>
-						<Link to={'/'}>Home</Link>
+						<Link to={'/test-deploy'}>Home</Link>
 					</li>
 					<li>Contact</li>
 					<li>About</li>
@@ -34,11 +34,11 @@ function Navigation() {
 						src={Heart}
 						alt=''
 					/>
-					<Link to={'card'}>
+					<Link to={'/test-deploy/card'}>
 						<img
 							src={Cart}
 							alt=''
-						/>{' '}
+						/>
 					</Link>
 				</div>
 			</div>

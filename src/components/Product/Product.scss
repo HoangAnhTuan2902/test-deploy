@@ -98,9 +98,10 @@
 				.product-reviews {
 					display: flex;
 					.previews-star {
+						margin-right: 8px;
 						display: flex;
 						align-items: center;
-						gap: 5px;
+						gap: 3px;
 						// img {
 						// }
 					}

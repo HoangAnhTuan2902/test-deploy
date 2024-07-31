@@ -3,20 +3,19 @@ import Products from '../../components/Products/Products';
 import SideNav from '../../components/SideNav/SideNav';
 import SlideShow from '../../components/SlideShow/SlideShow';
 import './Home.scss';
+import { IoIosArrowDown } from 'react-icons/io';
 
 import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
 
 function Home() {
-	var settings = {
-		accessibility: false, // Đảm bảo rằng accessibility được bật
-		arrows: false, // Hiển thị mũi tên điều hướng
-		dots: true, // Hiển thị các dấu chấm điều hướng
-		infinite: false, // Cho phép cuộn vô hạn
-		speed: 500, // Tốc độ chuyển đổi giữa các slide
-		slidesToShow: 1, // Số slide hiển thị cùng lúc
-		slidesToScroll: 1, // Số slide cuộn mỗi lần
+	const settings = {
+		accessibility: false,
+		arrows: false,
+		dots: true,
+		infinite: false,
+		speed: 500,
+		slidesToShow: 1,
+		slidesToScroll: 1,
 	};
 
 	return (
@@ -30,7 +29,9 @@ function Home() {
 							</p>
 							<p className='shop-now'>ShopNow</p>
 						</span>
-						<ul className='language'>English</ul>
+						<ul className='language'>
+							<p>English</p> <IoIosArrowDown />
+						</ul>
 					</div>
 				</div>
 				<Navigation />
