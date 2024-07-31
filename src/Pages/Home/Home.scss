@@ -66,6 +66,9 @@
 	.top-header {
 		height: 48px;
 		background-color: black;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
 		.desc {
 			display: flex;
 			align-items: center;
