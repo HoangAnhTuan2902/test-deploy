@@ -43,6 +43,9 @@ function Home() {
 					<div className='right'>
 						<Slider {...settings}>
 							<SlideShow />
+							<SlideShow />
+							<SlideShow />
+							<SlideShow />
 						</Slider>
 					</div>
 				</div>

@@ -10,7 +10,6 @@
 			margin-left: 135px;
 			padding-top: 40px;
 			display: flex;
-			justify-content: space-between;
 			.left {
 				position: relative;
 				display: inline-block;
@@ -23,8 +22,45 @@
 					bottom: 16px;
 				}
 			}
-			// .right {
-			// }
+			.right {
+				max-width: 1010px;
+				.slick-slider {
+					.slick-dots {
+						bottom: 12px;
+						li {
+							button {
+								&::before {
+									line-height: 24px;
+									font-size: 20px;
+									color: #ffd3d3;
+								}
+							}
+						}
+					}
+				}
+				.slick-slider {
+					.slick-dots {
+						.slick-active {
+							button {
+								position: relative;
+								&::before {
+									color: #db4444;
+								}
+								&::after {
+									bottom: 2px;
+									left: 2px;
+									position: absolute;
+									content: '';
+									width: 14px;
+									height: 14px;
+									border-radius: 50%;
+									outline: 3px solid #fff;
+								}
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 	.top-header {
