@@ -16,7 +16,7 @@ function App() {
 						element={<Home />}
 					/>
 					<Route
-						path='/test-deploy/'
+						path='/test-deploy'
 						element={<Home />}
 					/>
 					<Route
