@@ -20,7 +20,7 @@ function App() {
 						element={<Home />}
 					/>
 					<Route
-						path='/card'
+						path='/test-deploy/card'
 						element={<Card />}
 					/>
 				</Routes>
