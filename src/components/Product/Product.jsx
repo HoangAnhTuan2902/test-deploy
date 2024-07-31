@@ -18,7 +18,7 @@ function Product(props) {
 							src={image}
 							alt=''
 						/>
-						<div className='endow'>{endow}%</div>
+						<div className='endow'>-{endow}%</div>
 						<div className='interact'>
 							<div className='interact-item like'>
 								<img

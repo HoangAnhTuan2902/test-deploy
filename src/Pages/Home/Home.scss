@@ -11,18 +11,20 @@
 			padding-top: 40px;
 			display: flex;
 			justify-content: space-between;
-		}
-		.left {
-			position: relative;
-			display: inline-block;
-			.line {
-				position: absolute;
-				width: 1px;
-				background-color: #8e8e8e;
-				top: -41px;
-				right: -4px;
-				bottom: 16px;
+			.left {
+				position: relative;
+				display: inline-block;
+				.line {
+					position: absolute;
+					width: 1px;
+					background-color: #8e8e8e;
+					top: -41px;
+					right: -4px;
+					bottom: 16px;
+				}
 			}
+			// .right {
+			// }
 		}
 	}
 	.top-header {
