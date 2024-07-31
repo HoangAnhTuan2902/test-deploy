@@ -15,12 +15,12 @@ function App() {
 						path='/'
 						element={<Home />}
 					/>
-					{/* <Route
+					<Route
 						path='/test-deploy/'
 						element={<Home />}
-					/> */}
+					/>
 					<Route
-						path='/card'
+						path='/test-deploy/card'
 						element={<Card />}
 					/>
 				</Routes>
