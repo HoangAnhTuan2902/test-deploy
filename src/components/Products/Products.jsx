@@ -6,12 +6,11 @@ import { getAllProducts, postAddToCart } from '../../apiService/apiService';
 import { toast } from 'react-toastify';
 import './Products.scss';
 
-const ITEM_WIDTH = 250;
+import Slider from 'react-slick';
 
 function Products() {
 	const [time, setTime] = useState(100000);
 	const [products, setProducts] = useState([]);
-	const [scrollPosition, setScrollPosition] = useState(0);
 	const productRef = useRef(null);
 
 	function secondsToDhms(seconds) {
@@ -61,12 +60,24 @@ function Products() {
 		toast.success('Product added to cart');
 	};
 
-	const handleScroll = (scrollOffset) => {
-		const newScrollPosition = scrollPosition + scrollOffset;
-		setScrollPosition(newScrollPosition);
-
-		productRef.current.scrollLeft = newScrollPosition;
+	var settings = {
+		dots: false,
+		infinite: true,
+		speed: 500,
+		slidesToShow: 4,
+		slidesToScroll: 2,
+		slickNext: true,
 	};
+
+	const sliderRef = useRef(null);
+
+	const goToNext = () => {
+		sliderRef.current.slickNext();
+	};
+	const goToPrev = () => {
+		sliderRef.current.slickPrev();
+	};
+
 	return (
 		<div className='products-page'>
 			<div className='sale-timer'>
@@ -101,13 +112,13 @@ function Products() {
 					</div>
 					<div className='scroll-btn'>
 						<button
-							onClick={() => handleScroll(-ITEM_WIDTH)}
+							onClick={goToPrev}
 							className='btn'>
 							<HiArrowLeft />
 						</button>
 
 						<button
-							onClick={() => handleScroll(ITEM_WIDTH)}
+							onClick={goToNext}
 							className='btn'>
 							<HiArrowRight />
 						</button>
@@ -117,22 +128,26 @@ function Products() {
 			<div
 				ref={productRef}
 				className='product-item'>
-				{products.map((product) => {
-					return (
-						<Product
-							addToCart={addToCart}
-							key={product.id}
-							id={product.id}
-							name={product.title}
-							image={product.image}
-							price={product.price}
-							discountPrice={product.discountPrice}
-							previewStar={product.preriewStar}
-							totalReviews={product.totalReviews}
-							endow={product.endow}
-						/>
-					);
-				})}
+				<Slider
+					ref={sliderRef}
+					{...settings}>
+					{products.map((product) => {
+						return (
+							<Product
+								addToCart={addToCart}
+								key={product.id}
+								id={product.id}
+								name={product.title}
+								image={product.image}
+								price={product.price}
+								discountPrice={product.discountPrice}
+								previewStar={product.preriewStar}
+								totalReviews={product.totalReviews}
+								endow={product.endow}
+							/>
+						);
+					})}
+				</Slider>
 			</div>
 		</div>
 	);
